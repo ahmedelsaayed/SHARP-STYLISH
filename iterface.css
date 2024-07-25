@@ -1,0 +1,191 @@
+
+.page {
+    min-height: 100vh;
+    background-image: url('./background/01.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.overlay{
+    background-color: rgba(0,0,0,.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.links-container{
+    width: 100%;
+    text-align: right;
+}
+
+.header{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    display: flex;
+    padding: 35px;
+}
+
+.header .logo{
+    width: 300px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.header .links{
+    list-style: none;
+    text-align: right;
+    padding-left: 0;
+    /* padding-right: 20px; */
+    /* font-size: 20px; */
+}
+
+.links li {
+    display: inline-block;
+    margin-left: 10px;
+}
+.links li a{
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+}
+.links li a:hover{
+    color: red;
+}
+
+.toggle-menu{
+    background: none;
+    border: none;
+    width: 40px;
+    cursor: pointer;
+    margin-top: 15px;
+    display: none;
+}
+
+.toggle-menu:focus{
+    outline: none;
+}
+
+.toggle-menu span{
+    display: block;
+    background-color: #fff;
+    height: 3px;
+    margin-bottom: 4px;
+}
+
+.intro {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+}
+h1{
+    font-size: 34px;
+    margin: 0 0 12px;
+}
+span{
+    color: rgb(197, 99, 19);
+}
+p{
+    line-height: 1.6;
+    font-size: 20px;
+    margin: 0;
+}
+
+.pepole{
+    padding-top: 70px;
+    padding-bottom: 50px;
+    display: flex;
+    background-color: rgb(206, 168, 136);
+}
+.pepole .info{
+    flex: 1;
+    padding: 30px;
+}
+.pepole .info h2{
+    font-weight: bold;
+   font-size: 30px;
+   color: rgb(103, 70, 8); 
+   margin: 0 0 15px;
+}
+.pepole .info p{
+    font-size: 25px;
+    line-height: 1.2;
+    color: rgb(56, 47, 29);
+    margin: 0;
+}
+.pepole .image-pepole {
+    flex: 1;
+    text-align: center;
+    padding-top: 35px;
+    cursor: pointer;
+    width: 100%;
+}
+.Gallary{
+    width: 500px;
+}
+.a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(68, 46, 2);
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.popup-overlay{
+    position: fixed;
+    background-color: rgba(0, 0, 0, .7);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+.popup-box {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 1001;
+}
+.popup-box img{
+    max-width: 100%;
+}
+.close-button {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: rgb(194, 135, 18);
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(199, 193, 181);
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+footer{
+    width: 100%;
+    padding-top: 40px;
+    height: 150px;
+    background-color: black;
+}
+
+footer p {
+    color: rgb(194, 135, 18);;
+    text-align: center;
+}
+
